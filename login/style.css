@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: black;
+}
+
+.backgroundImage {
+    background-image: url('assets/images/wallhaven-5wj3z7.jpg');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110vw;
+    height: 110vh;
+    transform: translate(-5vw, -5vh);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+    filter: blur(20px);
+}
+
+.welcomeText {
+    margin: 20px 0 0 0;
+    font-size: 50px;
+    font-weight: bold;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.underWelcome {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#signIn {
+    color: rgb(23, 104, 255);
+    text-decoration: underline;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0 0 30px #ffffff93;
+}
+
+#loginFormContainer {
+    max-width: 800px;
+    max-height: 800px;
+    background-color: white;
+    z-index: 100;
+    padding: 20px 50px;
+}
+
+form {
+    margin: 20px 20px 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input {
+    margin: 5px 0;
+    width: 100%;
+    border: none;
+    background-color: #adadad34;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 12px 15px;
+    outline: 0;
+    transition: 0.5s;
+}
+
+form input:focus {
+    background-color: rgb(253, 253, 253);
+    box-shadow: 0 0 15px #adadad7e;
+    transition: 0.5s;
+}
+
+.inputRow {
+    width: 90%;
+    margin: 3px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.checkboxRow {
+    display: flex;
+    width: 90%;
+    margin: 3px 0;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.checkboxRow input {
+    width: fit-content;
+}
+
+.checkboxRow span {
+    margin-left: 10px;
+}
+
+#firstname {
+    margin-right: 3px;
+    border-radius: 10px 2px 2px 10px;
+}
+
+#lastname {
+    margin-left: 3px;
+    border-radius: 2px 10px 10px 2px;
+}
+
+::-webkit-input-placeholder {
+    color: #aaaaaa;
+    font-style: italic;
+}
+
+::-moz-placeholder {
+    color: #aaaaaa;
+    font-style: italic;
+}
+
+:-ms-input-placeholder {
+    color: #aaaaaa;
+    font-style: italic;
+}
+
+input:-moz-placeholder {
+    color: #aaaaaa;
+    font-style: italic;
+}
+
+input[type=submit] {
+    margin-top: 20px;
+    width: 60%;
+    background: linear-gradient(to right, #a0ecff, #a0c0ff);
+    transition: 0.7s;
+}
+
+input[type=submit]:hover {
+    box-shadow: 2px 3px 10px #a0c0ff;
+    transform: translateY(-3px);
+}
+
+input[type=submit]:active {
+    box-shadow: 0px 1px 6px #a0c0ff;
+    transform: translateY(3px);
+    transition: 0.1s;
+}
+
+input[type=submit]:disabled {
+    transform: none;
+    box-shadow: none;
+    filter: grayscale(100%);
+    transition: 0.7s;
+}

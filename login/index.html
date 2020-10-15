@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="login.js"></script>
+</head>
+
+<body>
+    <div class="backgroundImage"></div>
+    <div class="center column card" id="loginFormContainer">
+        <div class="column center">
+            <h1 class="welcomeText">Create Account</h1>
+            <p class="underWelcome">Already have an account?
+                <span id="signIn">Sign in</span>
+            </p>
+            <form action="" onsubmit="return false;">
+                <div class="inputRow">
+                    <input type="text" name="username" id="username" placeholder="Username">
+                </div>
+                <div class="inputRow name">
+                    <input type="text" name="firstname" id="firstname" placeholder="First Name">
+                    <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+                </div>
+                <div class="inputRow">
+                    <input type="text" name="email" id="email" placeholder="E-mail">
+                </div>
+                <div class="inputRow">
+                    <input type="password" name="password" id="password" placeholder="Password">
+                </div>
+                <div class="inputRow">
+                    <input type="password" id="ConfirmPassword" placeholder="Confirm Password">
+                </div>
+                <div class="checkboxRow">
+                    <input type="checkbox" id="agreement"><span>I agree to the <a href="#">Terms of Service</a></span><br>
+                </div>
+                <div class="inputRow">
+                    <input type="submit" value="LOGIN" id="submit" disabled>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+
+</html>
